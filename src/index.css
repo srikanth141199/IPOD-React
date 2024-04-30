@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.ipod {
+	margin: 1% auto 0px auto;
+	width: min-content;
+	padding: 20px 10px 5px 10px;
+	border-radius: 20px;
+	background-image: url("https://i1.sndcdn.com/artworks-6KsBfzjLyHD1G9FZ-myKfyA-t500x500.jpg");
+	box-shadow: 0px 0px 12px 2px black;
+  background-size: cover;
+  position:relative;
+  transition: transform ease-in-out 0.2s;
+	animation-name: rotor-pod;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;
+}

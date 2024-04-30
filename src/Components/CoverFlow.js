@@ -5,14 +5,14 @@ export default class CoverFlow extends React.Component{
         return(
 
             <div className="coverFlowScreen">
-                <h1>Cover Flow</h1>
-                <div class="cover-flow">
+                <h1 className="coverStyle">Cover Flow</h1>
+                {/* <div class="cover-flow">
                     <div class="cover-flow-item"><i class="fas fa-circle"></i></div>
                     <div class="cover-flow-item"><i class="fas fa-circle"></i></div>
                     <div class="cover-flow-item"><i class="fas fa-circle"></i></div>
                     <div class="cover-flow-item"><i class="fas fa-circle"></i></div>
                     <div class="cover-flow-item"><i class="fas fa-circle"></i></div>
-                </div>
+                </div> */}
             </div>
         )
 

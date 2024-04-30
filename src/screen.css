@@ -1,29 +1,78 @@
-.cover-flow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* Adjust as needed */
-    overflow: hidden;
-  }
-  
-  /* Styles for the individual items */
-  .cover-flow-item {
-    flex: 0 0 auto;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    margin: 0 10px; /* Adjust as needed */
-    border-radius: 50%; /* Makes the item circular */
-    background-color: #ccc; /* Placeholder color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: #333; /* Icon color */
-  }
+.gameScreen {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(236 175 61 / 89%);
+}
 
-  /*Cover Flow styling ends*/
+.gameStyle {
+  width: 80%;
+  height: auto;
+}
 
-  .settings-icon {
-    font-size: 24px;
-    color: #333; /* Icon color */
-  }
+.musicScreen {
+  background-color: #ffb500;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.settingsScreen {
+  height: 80%;
+  width: 80%;
+  background-image: url("./asserts/settings.png");
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5%;
+  margin-left: 10%;
+  margin-top: 10%;
+  object-fit:contain;
+  object-position: center;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.settingsStyle{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 10em;
+}
+.coverFlowScreen {
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 80%;
+  width: 80%;
+  background-image: url("https://img.freepik.com/free-vector/blue-vector-watercolour-texture_1409-2745.jpg");
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5%;
+  opacity: 0.7;
+}
+.coverStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/*Display Styling Starts*/
+
+.displayContainer {
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+  background-image: url("https://pics.craiyon.com/2023-06-30/ec612bc7ecb54bb6aa3efe22e485b7e2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  transition: transform ease-in-out 0.2s;
+}
