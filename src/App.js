@@ -12,7 +12,7 @@ export default class App extends React.Component{
     this.state = {
       menuOptions : ['Songs', 'Games', 'CoverFlow', 'Settings' ],
       songsMenu : ['AllSongs', 'Artists', 'Albums'],
-      displayPage : 3   //need to keep -1 by default
+      displayPage : -1   //need to keep -1 by default
     }
   }
 
