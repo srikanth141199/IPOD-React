@@ -1,0 +1,29 @@
+.cover-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  /* Styles for the individual items */
+  .cover-flow-item {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    margin: 0 10px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the item circular */
+    background-color: #ccc; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333; /* Icon color */
+  }
+
+  /*Cover Flow styling ends*/
+
+  .settings-icon {
+    font-size: 24px;
+    color: #333; /* Icon color */
+  }

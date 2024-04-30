@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import './keyboard.css'
+import './screen.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
