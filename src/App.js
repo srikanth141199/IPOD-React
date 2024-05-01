@@ -55,6 +55,18 @@ export default class App extends React.Component{
   }
 
   handleSelectButton(){
+    
+    //on Click of Songs selected will be one and menuOption length will be 4
+    if(this.state.selected === 0 && this.state.menuOptions.length === 4){
+      //here we need to update the menu Options with songs Menu
+      this.setState({
+        menuOptions : this.state.songsMenu,
+        selected : 0,
+        displayPage : -1
+      })
+      this.temp_selected = 0;
+      return
+    }
     console.log("select Button : ", this.state.selected);
     this.setState({
       displayPage : this.state.selected
@@ -83,6 +95,7 @@ export default class App extends React.Component{
           selectedOption = {this.state.selected}
           menuOptions = {this.state.menuOptions}
           displayPage = {this.state.displayPage}
+          songsMenu = {this.state.songsMenu}
         />
         <Keyboard
           selectButtonClicked={() => this.handleSelectButton()}

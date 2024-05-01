@@ -61,6 +61,29 @@
   height: 50vh;
 }
 
+.artistScreen {
+  height: 100%;
+  width: 100%;
+  background-image: url("./asserts/Artist.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 1;
+}
+
+
+.albumsScreen{
+  height: 100%;
+  width: 100%;
+  background-image: url("./asserts/Albums.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 1;
+}
+
 /*Display Styling Starts*/
 
 .displayContainer {
