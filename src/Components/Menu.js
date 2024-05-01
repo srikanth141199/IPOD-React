@@ -16,6 +16,12 @@ export default class Menu extends React.Component {
             </div>
           );
         })}
+
+      {menuOptions.length === 3 ?
+        <div style={{color:'green'}}>
+            <p style={{fontSize:18}}>click "<i className="fas fa-backward"></i>" to go back</p>
+        </div>:''
+      }
       </div>
     );
   }
