@@ -24,7 +24,7 @@ export default class App extends React.Component{
     zingTouch.bind(document.getElementsByClassName("keyboard-container")[0], 'rotate', (event) => {
       //1st step is on click of menu we need to display menuOptions
       //Handling the move movement event
-      console.log("event : ", event);
+      //console.log("event : ", event);
       if(document.getElementsByClassName('menuContainer')[0].classList.contains('width-50')){
         let dist = event.detail.distanceFromLast;
           this.temp_change_in_angle += dist;
@@ -55,13 +55,22 @@ export default class App extends React.Component{
   }
 
   handleSelectButton(){}
-  handleMenuButton(){}
+
+  //on click of Menu "menuContainer" should have width-50 class added to it so that component did mount will run and option movement can be enabled
+  handleMenuButton(){
+    if(document.getElementsByClassName("menuContainer")[0].classList.contains('width-50')){
+      document.getElementsByClassName("menuContainer")[0].classList.remove('width-50');
+    }
+    else{
+      document.getElementsByClassName("menuContainer")[0].classList.add('width-50');
+    }
+  }
   handleLeftButton(){}
   handleRightButton(){}
   handlePlayPauseButton(){}
 
   render(){
-    console.log("selected :", this.state.selected);
+    //console.log("selected :", this.state.selected);
     return (
       <div className="ipod">
         <Display 

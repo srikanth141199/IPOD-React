@@ -8,7 +8,7 @@ export default class Display extends React.Component{
 
     render(){
         const {menuOptions, displayPage, selectedOption} = this.props;
-        console.log("display selectedOption : ", selectedOption);
+        //console.log("display selectedOption : ", selectedOption);
         return<div className="displayContainer">
             <Menu menuOptions = {menuOptions} selectedOption = {selectedOption}/>
             {displayPage === 1 && menuOptions.length === 4 ? <Game/>:""}
