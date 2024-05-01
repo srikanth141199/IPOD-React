@@ -114,6 +114,6 @@
 	overflow-wrap: normal;
 }
 
-.menuContainer > .selected {
-	background-color: rgb(89, 89, 255);
+.menuContainer > .selectedOption {
+	background-color: rgb(125, 236, 143);
 }

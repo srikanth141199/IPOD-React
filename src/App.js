@@ -61,10 +61,11 @@ export default class App extends React.Component{
   handlePlayPauseButton(){}
 
   render(){
-    
+    console.log("selected :", this.state.selected);
     return (
       <div className="ipod">
         <Display 
+          selectedOption = {this.state.selected}
           menuOptions = {this.state.menuOptions}
           displayPage = {this.state.displayPage}
         />
