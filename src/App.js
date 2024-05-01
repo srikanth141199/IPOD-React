@@ -54,7 +54,13 @@ export default class App extends React.Component{
     })
   }
 
-  handleSelectButton(){}
+  handleSelectButton(){
+    console.log("select Button : ", this.state.selected);
+    this.setState({
+      displayPage : this.state.selected
+    })
+    this.handleMenuButton();
+  }
 
   //on click of Menu "menuContainer" should have width-50 class added to it so that component did mount will run and option movement can be enabled
   handleMenuButton(){
@@ -79,12 +85,13 @@ export default class App extends React.Component{
           displayPage = {this.state.displayPage}
         />
         <Keyboard
-          selectButtonClicked = {this.handleSelectButton}
-          menuButtonClicked = {this.handleMenuButton}
-          rightButtonClicked = {this.handleRightButton}
-          leftButtonClicked = {this.handleLeftButton}
-          playPauseButtonClicked = {this.handlePlayPauseButton}
+          selectButtonClicked={() => this.handleSelectButton()}
+          menuButtonClicked={() => this.handleMenuButton()}
+          rightButtonClicked={() => this.handleRightButton()}
+          leftButtonClicked={() => this.handleLeftButton()}
+          playPauseButtonClicked={() => this.handlePlayPauseButton()}
         />
+
       </div>
     );
   }
