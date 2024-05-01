@@ -23,6 +23,7 @@ export default class App extends React.Component{
     let zingTouch = new ZingTouch.Region(document.getElementsByClassName("keyboard-container")[0]);
     zingTouch.bind(document.getElementsByClassName("keyboard-container")[0], 'rotate', (event) => {
       //1st step is on click of menu we need to display menuOptions
+      //Handling the move movement event
       console.log("event : ", event);
       if(document.getElementsByClassName('menuContainer')[0].classList.contains('width-50')){
         let dist = event.detail.distanceFromLast;
@@ -30,7 +31,7 @@ export default class App extends React.Component{
           if (this.temp_change_in_angle > 60)//clock wise
           {
               this.temp_selected++;
-              this.temp_selected = this.temp_selected % this.state.options.length;
+              this.temp_selected = this.temp_selected % this.state.menuOptions.length;
               this.setState({
                   selected: this.temp_selected,
               });
@@ -41,9 +42,9 @@ export default class App extends React.Component{
           {
               this.temp_selected--;
               if (this.temp_selected === -1)
-                  this.temp_selected = this.state.options.length - 1;
+                  this.temp_selected = this.state.menuOptions.length - 1;
 
-              this.temp_selected = this.temp_selected % this.state.options.length;
+              this.temp_selected = this.temp_selected % this.state.menuOptions.length;
               this.setState({
                   selected: this.temp_selected,
               });
